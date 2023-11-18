@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 
 :root{
@@ -90,18 +92,20 @@ header{
 
 .propuesta>h1{
     font-family: var(--fontDos);
+    letter-spacing: 2px;
     
 }
 
 .imagen{
     width: 50%;
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .imagen>img{
-    width: 60%;
+    width: 80%;
     height: 90%;
     border-radius: 20px;
 }
@@ -115,8 +119,10 @@ header{
     nav{
         position: sticky;
         top: 0;
-        backdrop-filter: blur(10px);
         background: rgba(242, 249, 255, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        z-index: 10;
     }
 
     .propuesta{
@@ -135,6 +141,7 @@ header{
 
     .imagen{
         width: 100%;
+        height: 60%;
     }
     
 }
@@ -142,7 +149,6 @@ header{
 @media screen and (max-width: 970px) {
     header{
         gap: 10px;
-        height: 100vh;
     }
 
     .propuesta{
@@ -152,7 +158,7 @@ header{
     .lista{
         position: absolute;
         gap: 20px;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(500px);
         background: rgba(242, 249, 255, 0.9);
         flex-direction: column;
         width: 100%;

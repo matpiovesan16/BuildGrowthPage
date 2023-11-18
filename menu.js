@@ -1,6 +1,7 @@
 const menuUl = document.getElementById('menuUl');
 const menu = document.getElementById('menu');
 const cerrarMenu = document.getElementById('menuCerrar');
+const botonNav = document.querySelectorAll('#botonNav');
 
 
 function abrirMenu(){
@@ -27,4 +28,14 @@ function cerrarMenuF(){
 menu.addEventListener('click', abrirMenu);
 
 cerrarMenu.addEventListener('click', cerrarMenuF);
+
+
+
+botonNav.forEach(toggle => {
+    toggle.addEventListener('click', cerrarMenuF);
+})
+
+
+
+console.log(botonNav);
 
