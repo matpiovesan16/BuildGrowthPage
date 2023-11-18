@@ -110,8 +110,13 @@ header{
     border-radius: 20px;
 }
 
-.servicio{
-    color: var(--mariner-800);
+.descripcion>p, .titulo{
+    color: var(--mariner-700) !important;
+
+}
+
+.logo>img{
+    filter: invert(30%) sepia(93%) saturate(1214%) hue-rotate(195deg) brightness(102%) contrast(87%);
 }
 
 @media screen and (max-width:1230px){

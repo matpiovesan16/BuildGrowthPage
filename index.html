@@ -11,6 +11,7 @@
   />
   <link rel="stylesheet" href="styleFAQ.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>BuildGrowth</title>
 </head>
 <body>
@@ -39,16 +40,15 @@
 
     <header>
 
-        <div class="propuesta gap-9">
+        <div class="propuesta gap-4">
             <h1 class="text-7xl font-bold w-[80%] max-[1230px]:text-4xl max-[1230px]:text-center animate__animated animate__fadeInLeft">Build your digital presence with BuildGrowth</h1>
             <p class="text-2xl w-[80%] text-justify max-[1230px]:text-xl animate__animated animate__fadeInLeft">"BuildGrowth drives business success trough innovative marketing strategies, cutting-edge SEO, and custom web development. We transform into digital triumphs"</p>
             <button class="boton text-3xl font-bold w-[250px] h-[60px] animate__animated animate__fadeInDown">Call Us</button>
 
             <div class="text-[#2573d9] text-6xl text-center justify-self-center p-3 animate-pulse max-sm:justify-self-end z-2">
 
-                <a href="">
-                    <i class="fa-solid fa-chevron-down hover:text-[#f0f8fe] cursor-pointer animate-bounce">
-
+                <a href="#servicio">
+                    <i class="fa-solid fa-chevron-down text-[#2573d9] cursor-pointer animate-bounce">
                     </i>
                 </a>
 
@@ -61,22 +61,22 @@
     </header>
 
 
-    <section class="servicio w-full p-8" id="servicio">
+    <section class="servicio w-full p-8 " id="servicio">
         <h1 class="font-bold text-3xl text-center">Services</h1>
-        <div class="proyectos flex flex-wrap w-full p-9 gap-9 justify-center flex-grow">
+        <div class="proyectos flex flex-wrap w-full p-9 gap-9 justify-center text-[#2573d9]">
 
 
           <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
             <div class="logo flex justify-center"><img class="h-[100px]" src="img/motor-de-busqueda.png" alt=""></div>
-            <div class="titulo text-center font-bold text-xl">Seo Optimizacion</div>
-            <div class="descripcion text-justify text-slate-500"><p>We optimize your website for search engines, delivering effective SEO strategies that drive traffic to your website and improve your online presence</p></div>
+            <div class="titulo text-center font-bold text-xl text-[#2573d9]">Seo Optimizacion</div>
+            <div class="descripcion text-justify text-[#2573d9]"><p>We optimize your website for search engines, delivering effective SEO strategies that drive traffic to your website and improve your online presence</p></div>
         </div>
 
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
                 <div class="logo flex justify-center"><img class="h-[100px]" src="img/solicitud.png" alt=""></div>
-                <div class="titulo text-center font-bold text-xl">Custom Web development</div>
-                <div class="descripcion text-justify text-slate-500"><p>We offer custom web development services, crafting visually stunning website that are highly funtional and tailored to your business needs</p></div>
+                <div class="titulo text-center font-bold text-xl text-[#2573d9]">Custom Web development</div>
+                <div class="descripcion text-justify text-[#2573d9]"><p>We offer custom web development services, crafting visually stunning website that are highly funtional and tailored to your business needs</p></div>
             </div>
 
 
@@ -115,7 +115,8 @@
 
     <section class="FAQ max-[970px]:p-2 bg-[#f2f9ff]" id="FAQ" >
         <h1 class="text-center font-bold text-3xl">Frequently Asked Questions</h1>
-        <div class="faq-container">
+        <div class="faq-container" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
     
     
           <div class="faq">
@@ -128,7 +129,7 @@
             </p>
     
             <button class="faq-toggle">
-              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-down text-[#2573d9]"></i>
               <i class="fas fa-times"></i>
             </button>
           </div>
@@ -143,7 +144,7 @@
             </p>
     
             <button class="faq-toggle">
-              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-down text-[#2573d9]"></i>
               <i class="fas fa-times"></i>
             </button>
 
@@ -160,7 +161,7 @@
             </p>
     
             <button class="faq-toggle">
-              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-chevron-down text-[#2573d9]"></i>
               <i class="fas fa-times"></i>
             </button>
 
@@ -179,5 +180,9 @@
 
     <script src="menu.js"></script>
     <script src="faq.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
