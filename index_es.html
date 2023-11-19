@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="styleFAQ.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>BuildGrowth</title>
+</head>
+<body>
+    <nav class="">
+      <a href="indexEs.html"><img src="img/LOGO.png" alt="" class="h-[200px] p-5"></a>
+         
+
+        <ul class="lista listaOcultar text-xl font-bold  animate__animated animate__fadeInDown" id="menuUl">
+
+          <div class="flex items-center gap-3 hover:underline"> 
+            <select name="" id="idioma" onchange="cambiarIdioma()">
+              <option value="es">Es</option>
+              <option value="en" >En</option>
+              <option value="pr">Pr</option>
+            </select>
+            <a href="indexEs.html" class="flex gap-4 justify-center items-center"><img src="img/argentina.png" alt="" class="h-[35px]"></a>
+          </div>
+
+
+
+            <a href="#servicio" id="botonNav">Servicios</a>
+            <a href="#FAQ" id="botonNav">FAQ</a>
+            <a href="" id="botonNav">Sobre Nosotros</a>
+            <button class="boton flex justify-center items-center text-2xl">CONTACTO</button>
+        </ul>
+
+        <i class="min-[970px]:hidden fa-solid fa-bars text-3xl text-[#2573d9] cursor-pointer hover:text-opacity-50 animate__animated animate__fadeInRight p-5" id="menu"></i>
+
+        <i class="hidden fa-solid fa-x text-3xl text-[#2573d9] cursor-pointer hover:text-opacity-50 animate__animated animate__fadeInRight p-5" id="menuCerrar"></i>
+    </nav>
+
+    <header>
+
+        <div class="propuesta gap-4">
+            <h1 class="text-7xl font-bold w-[80%] max-[1230px]:text-4xl max-[1230px]:text-center animate__animated animate__fadeInLeft">Construye tu presencia digital con BuildGrowth</h1>
+            <p class="text-2xl w-[80%] text-justify max-[1230px]:text-xl animate__animated animate__fadeInLeft">"BuildGrowth impulsa el éxito empresarial a través de estrategias innovadoras de marketing, SEO de vanguardia y desarrollo web personalizado. Transformamos desafíos digitales en triunfos."</p>
+            <button class="boton text-3xl font-bold w-[250px] h-[60px] animate__animated animate__fadeInDown">Hablamos</button>
+
+            <div class="text-[#2573d9] text-6xl text-center justify-self-center p-3 animate-pulse max-sm:justify-self-end z-2">
+
+                <a href="#servicio">
+                    <i class="fa-solid fa-chevron-down text-[#2573d9] cursor-pointer animate-bounce">
+                    </i>
+                </a>
+
+              </div>
+        </div>
+
+        <div class="imagen animate__animated animate__fadeInDown">
+            <img src="img/Leonardo_Diffusion_XL_BuildGrowth_a_leading_digital_solutions_3.jpg" alt="">
+        </div>
+    </header>
+
+
+    <section class="servicio w-full p-8 " id="servicio">
+        <h1 class="font-bold text-3xl text-center">Servicios</h1>
+        <div class="proyectos flex flex-wrap w-full p-9 gap-9 justify-center text-[#2573d9]">
+
+
+          <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
+            <div class="logo flex justify-center"><img class="h-[100px]" src="img/motor-de-busqueda.png" alt="" data-aos="flip-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="900"></div>
+            <div class="titulo text-center font-bold text-xl text-[#2573d9]">Seo Optimización</div>
+            <div class="descripcion text-justify text-[#2573d9]"><p>Optimizamos tu sitio web para los motores de búsqueda, implementando estrategias efectivas de SEO que aumentan el tráfico hacia tu sitio web y mejoran tu presencia en línea.</p></div>
+        </div>
+
+
+            <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/solicitud.png" alt="" data-aos="flip-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="900"></div>
+                <div class="titulo text-center font-bold text-xl text-[#2573d9]">Desarrolo Web personalizado</div>
+                <div class="descripcion text-justify text-[#2573d9]"><p>Ofrecemos servicios personalizados de desarrollo web, creando sitios web visualmente impresionantes que son altamente funcionales y adaptados a las necesidades específicas de tu negocio.</p></div>
+            </div>
+
+
+
+            <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/arte.png" alt="" data-aos="flip-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="900"></a></div>
+                <div class="titulo text-center font-bold text-xl">Diseño de identididad visual</div>
+                <div class="descripcion text-justify text-slate-500"><p>Ayudamos a las empresas a crear una identidad visual sólida que refleje los valores de su marca y resuene con su audiencia objetivo a través de diseños personalizados y la identidad de la marca.</p></div>
+            </div>
+
+            <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/anuncios-en-linea.png" alt="" data-aos="flip-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="900"></a></div>
+                <div class="titulo text-center font-bold text-xl">Google Ads</div>
+                <div class="descripcion text-justify text-slate-500"><p>Convertimos clics en clientes. Expertos en Google Ads, maximizamos la visibilidad y relevancia de tus productos, impulsando ventas e interacciones. Potencia tu presencia en línea con nuestras estrategias publicitarias efectivas.</p></div>
+            </div>
+
+            <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/megafono.png" alt="" data-aos="flip-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="900"></div>
+                <div class="titulo text-center font-bold text-xl">Marketing digital</div>
+                <div class="descripcion text-justify text-slate-500"><p>Generamos resultados tangibles. Como expertos en Marketing Digital, optimizamos la visibilidad y relevancia de tus productos, potenciando las ventas y las interacciones. Destaca en línea con nuestras estrategias efectivas y demuestra por qué somos líderes en el mundo digital.</p></div>
+            </div>
+
+            <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/redes-sociales.png" alt="" data-aos="flip-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="900"></div>
+                <div class="titulo text-center font-bold text-xl">Social Media</div>
+                <div class="descripcion text-justify text-slate-500"><p>Generamos impacto auténtico. Como expertos en Social Media, optimizamos la visibilidad y relevancia de tus productos, impulsando las interacciones y construyendo conexiones significativas. Resalta en las redes sociales con nuestras estrategias efectivas y demuestra por qué somos líderes en el mundo digital.</p></div>
+            </div>
+
+          
+
+       
+
+
+        </div>
+    </section>
+
+    <section class="FAQ max-[970px]:p-2 bg-[#f2f9ff]" id="FAQ" >
+        <h1 class="text-center font-bold text-3xl">Preguntas frecuentes</h1>
+        <div class="faq-container">
+    
+    
+          <div class="faq" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h3 class="faq-title">
+               ¿Ques es el SEO?
+            </h3>
+    
+            <p class="faq-text">
+              Preguntale a Tiago
+            </p>
+    
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down text-[#2573d9]"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="faq" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h3 class="faq-title">
+              ¿Marketing para mi negocio?
+            </h3>
+    
+            <p class="faq-text">
+              Marketing para tu vida, por el experto Alvy Petersen
+            </p>
+    
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down text-[#2573d9]"></i>
+              <i class="fas fa-times"></i>
+            </button>
+
+
+          </div>
+
+          <div class="faq" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <h3 class="faq-title">
+              ¿La web es necesaria?
+            </h3>
+    
+            <p class="faq-text">
+             Muy necesaria.
+            </p>
+    
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down text-[#2573d9]"></i>
+              <i class="fas fa-times"></i>
+            </button>
+
+            
+          </div>
+
+
+
+
+          </div>
+    </section>
+
+
+    <div class="whatsapp">
+      <img src="img/whatsapp.png" alt="">
+    </div>
+
+
+
+
+
+    <script src="menu.js"></script>
+    <script src="faq.js"></script>
+    <script src="selectorIdiomas.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

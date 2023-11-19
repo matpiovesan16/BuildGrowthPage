@@ -20,9 +20,17 @@
          
 
         <ul class="lista listaOcultar text-xl font-bold  animate__animated animate__fadeInDown" id="menuUl">
+  
             <div class="flex items-center gap-3 hover:underline"> 
-              <a href="indexEs.html" class="flex gap-4 justify-center items-center"><h1>Es</h1><img src="img/argentina.png" alt="" class="h-[35px]"></a>
+              <select name="" id="idioma" onchange="cambiarIdioma()">
+                <option value="en">En</option>
+                <option value="es" >Es</option>
+                <option value="pr">Pr</option>
+              </select>
+              <a href="indexEs.html" class="flex gap-4 justify-center items-center"><img src="img/estados-unidos.png" alt="" class="h-[35px]"></a>
             </div>
+
+            
             <a href="#servicio" id="botonNav">Services</a>
             <a href="#FAQ" id="botonNav">FAQ</a>
             <a href="" id="botonNav">About us</a>
@@ -67,7 +75,7 @@
               data-aos-easing="ease-out-cubic"
               data-aos-duration="900"></div>
             <div class="titulo text-center font-bold text-xl text-[#2573d9]">Seo Optimizacion</div>
-            <div class="descripcion text-justify text-[#2573d9]"><p>We optimize your website for search engines, delivering effective SEO strategies that drive traffic to your website and improve your online presence</p></div>
+            <div class="descripcion text-justify text-[#2573d9]"><p>We optimize your website for search engines, delivering effective SEO strategies that drive traffic to your website and improve your online presence.</p></div>
         </div>
 
 
@@ -76,7 +84,7 @@
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></div>
                 <div class="titulo text-center font-bold text-xl text-[#2573d9]">Custom Web development</div>
-                <div class="descripcion text-justify text-[#2573d9]"><p>We offer custom web development services, crafting visually stunning website that are highly funtional and tailored to your business needs</p></div>
+                <div class="descripcion text-justify text-[#2573d9]"><p>We offer custom web development services, crafting visually stunning website that are highly funtional and tailored to your business needs.</p></div>
             </div>
 
 
@@ -86,7 +94,7 @@
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></a></div>
                 <div class="titulo text-center font-bold text-xl">Visual Identify Desing</div>
-                <div class="descripcion text-justify text-slate-500"><p>We help businesses create a strong visual identify that reflects their brands values and resonates with their target audiences through custom designs and brand identify...</p></div>
+                <div class="descripcion text-justify text-slate-500"><p>We help businesses create a strong visual identify that reflects their brands values and resonates with their target audiences through custom designs and brand identify.</p></div>
             </div>
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
@@ -94,15 +102,15 @@
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></a></div>
                 <div class="titulo text-center font-bold text-xl">Google Ads</div>
-                <div class="descripcion text-justify text-slate-500"><p>We help businesses create a strong visual identify that reflects their brands values and resonates with their target audiences through custom designs and brand identify...</p></div>
+                <div class="descripcion text-justify text-slate-500"><p>Turning clicks into customers. As experts in Google Ads, we maximize the visibility and relevance of your products, boosting sales and interactions. Empower your online presence with our effective advertising strategies.</p></div>
             </div>
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
                 <div class="logo flex justify-center"><img class="h-[100px]" src="img/megafono.png" alt="" data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></div>
-                <div class="titulo text-center font-bold text-xl">Marketing of content</div>
-                <div class="descripcion text-justify text-slate-500"><p>We offer custom web development services, crafting visually stunning website that are highly funtional and tailored to your business needs</p></div>
+                <div class="titulo text-center font-bold text-xl">Digital marketing</div>
+                <div class="descripcion text-justify text-slate-500"><p>We generate tangible results. As experts in Digital Marketing, we optimize the visibility and relevance of your products, boosting sales and interactions. Stand out online with our effective strategies and showcase why we are leaders in the digital world.</p></div>
             </div>
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
@@ -110,7 +118,7 @@
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></div>
                 <div class="titulo text-center font-bold text-xl">Social Media</div>
-                <div class="descripcion text-justify text-slate-500"><p>We optimize your website for search engines, delivering effective SEO strategies that drive traffic to your website and improve your online presence</p></div>
+                <div class="descripcion text-justify text-slate-500"><p>We generate authentic impact. As experts in Social Media, we optimize the visibility and relevance of your products, driving interactions and building meaningful connections. Shine on social media with our effective strategies and demonstrate why we are leaders in the digital world.</p></div>
             </div>
 
           
@@ -185,7 +193,7 @@
     </section>
 
 
-    <div class="whatsapp animate-pulse">
+    <div class="whatsapp">
       <img src="img/whatsapp.png" alt="">
     </div>
 
@@ -195,6 +203,7 @@
 
     <script src="menu.js"></script>
     <script src="faq.js"></script>
+    <script src="selectorIdiomas.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
