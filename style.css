@@ -56,8 +56,18 @@ select{
     align-items: center;
 }
 
-ul>a:hover{
-    text-decoration: underline;
+ul>a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: var(--mariner-950);
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform .15s ;
+}
+
+ul>a:hover::after{
+    transform: scale(1,1);
 }
 
 nav>a>img{
@@ -91,7 +101,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly
 }
 
 .propuesta>h1{
@@ -102,7 +112,7 @@ header{
 
 .imagen{
     width: 50%;
-    height: 900px;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
