@@ -83,10 +83,13 @@ nav>a>img{
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--mariner-950);
+    font-weight: bold;
+    font-size: 1.5em;
     text-decoration: none;
 }
 .boton:hover{
     cursor: pointer;
+    background-color: var(--mariner-800);
     scale: 1.05;
 }
 header{
@@ -124,7 +127,7 @@ header{
     border-radius: 20px;
 }
 
-.descripcion>p, .titulo{
+.descripcion, .titulo{
     color: var(--mariner-700) !important;
 
 }

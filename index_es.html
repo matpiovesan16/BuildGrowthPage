@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleContacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="stylesheet" href="styleFAQ.css">
+  <link rel="stylesheet" href="css/styleFAQ.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="img/iconSinfondo.png">
@@ -17,7 +18,7 @@
 </head>
 <body>
     <nav class="">
-      <a href="indexEs.html"><img src="img/LOGO.png" alt="" class="h-[200px] p-5"></a>
+      <a href="index_es.html"><img src="img/logo/LOGO.png" alt="" class="h-[200px] p-5"></a>
          
 
         <ul class="lista listaOcultar text-xl font-bold  animate__animated animate__fadeInDown" id="menuUl">
@@ -25,10 +26,10 @@
           <div class="flex items-center gap-3 hover:underline"> 
             <select name="" id="idioma" onchange="cambiarIdioma()">
               <option value="es">Es</option>
-              <option value="en" >En</option>
               <option value="pr">Pr</option>
+              <option value="en" >En</option>
             </select>
-            <a href="index_es.html" class="flex gap-4 justify-center items-center"><img src="img/argentina.png" alt="" class="h-[35px]"></a>
+            <a href="index_es.html" class="flex gap-4 justify-center items-center"><img src="img/flag/argentina.png" alt="" class="h-[35px]"></a>
           </div>
 
 
@@ -36,7 +37,7 @@
             <a href="#servicio" id="botonNav">Servicios</a>
             <a href="#FAQ" id="botonNav">FAQ</a>
             <a href="" id="botonNav">Sobre Nosotros</a>
-            <button class="boton flex justify-center items-center text-2xl">CONTACTO</button>
+            <a class="boton flex justify-center items-center text-2xl" href="#contacto">CONTACTO</a>
         </ul>
 
         <i class="min-[970px]:hidden fa-solid fa-bars text-3xl text-[#2573d9] cursor-pointer hover:text-opacity-50 animate__animated animate__fadeInRight p-5" id="menu"></i>
@@ -62,7 +63,7 @@
         </div>
 
         <div class="imagen animate__animated animate__fadeInDown">
-            <img src="img/Leonardo_Diffusion_XL_BuildGrowth_a_leading_digital_solutions_3.jpg" alt="">
+            <img src="img/imagenPresentacion.jpg" alt="">
         </div>
     </header>
 
@@ -73,7 +74,7 @@
 
 
           <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
-            <div class="logo flex justify-center"><img class="h-[100px]" src="img/motor-de-busqueda.png" alt="" data-aos="flip-right"
+            <div class="logo flex justify-center"><img class="h-[100px]" src="img/ilustraciones/motor-de-busqueda.png" alt="" data-aos="flip-right"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="900"></div>
             <div class="titulo text-center font-bold text-xl text-[#2573d9]">Seo Optimización</div>
@@ -82,7 +83,7 @@
 
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
-                <div class="logo flex justify-center"><img class="h-[100px]" src="img/solicitud.png" alt="" data-aos="flip-right"
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/ilustraciones/solicitud.png" alt="" data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></div>
                 <div class="titulo text-center font-bold text-xl text-[#2573d9]">Desarrolo Web personalizado</div>
@@ -92,7 +93,7 @@
 
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
-                <div class="logo flex justify-center"><img class="h-[100px]" src="img/arte.png" alt="" data-aos="flip-right"
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/ilustraciones/arte.png" alt="" data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></a></div>
                 <div class="titulo text-center font-bold text-xl">Diseño de identididad visual</div>
@@ -100,7 +101,7 @@
             </div>
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
-                <div class="logo flex justify-center"><img class="h-[100px]" src="img/anuncios-en-linea.png" alt="" data-aos="flip-right"
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/ilustraciones/anuncios-en-linea.png" alt="" data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></a></div>
                 <div class="titulo text-center font-bold text-xl">Google Ads</div>
@@ -108,7 +109,7 @@
             </div>
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
-                <div class="logo flex justify-center"><img class="h-[100px]" src="img/megafono.png" alt="" data-aos="flip-right"
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/ilustraciones/megafono.png" alt="" data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></div>
                 <div class="titulo text-center font-bold text-xl">Marketing digital</div>
@@ -116,7 +117,7 @@
             </div>
 
             <div class="flex flex-col w-[450px] shadow-2xl rounded-lg p-3 gap-5" data-aos="flip-left">
-                <div class="logo flex justify-center"><img class="h-[100px]" src="img/redes-sociales.png" alt="" data-aos="flip-right"
+                <div class="logo flex justify-center"><img class="h-[100px]" src="img/ilustraciones/redes-sociales.png" alt="" data-aos="flip-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="900"></div>
                 <div class="titulo text-center font-bold text-xl">Social Media</div>
@@ -195,17 +196,67 @@
     </section>
 
 
+    <section id="contacto">
+      <h1 class="text-3xl font-bold">Contacto</h1>
+      <div class="contactoContenedor" data-aos="flip-left">
+        <div 
+        class="formTitulo" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="900">
+          <h1><span class="font-bold">¿BUSCAS AYUDA PARA</span> GESTIONAR TU DESAFIO?</h1>
+        </div>
+
+        <div class="formularioContenedor">
+
+        <form action="" class="formulario" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="900">
+
+        <div class="formGroup">
+          <input type="email" class="formInput"  name='email'  placeholder=" " required/>
+          <label for="email" class="formLabel">Email:</label>
+        </div>
+          
+
+
+        <div class="formGroup">
+          
+          <input type="text" class="formInput" name='mensaje' placeholder=" "/>
+          <label for="text" class="formLabel">Mensaje:</label>
+
+
+        </div>
+          
+  
+          
+  
+          <div className="">
+          <input type="submit" class="boton bg-[#2573d9]" value="Enviar" />
+          </div> 
+
+          <!-- <p class="mensajeEnviado">Enviando...</p>
+          <p class="mensajeEnviado">Mensaje Enviado</p> -->
+
+
+        </form>
+      </div>
+
+      </div>
+      
+    </section>
+
+
     <div class="whatsapp">
-      <img src="img/whatsapp.png" alt="">
+      <img src="img/icono/whatsapp.png" alt="">
     </div>
 
 
 
 
 
-    <script src="menu.js"></script>
-    <script src="faq.js"></script>
-    <script src="selectorIdiomas.js"></script>
+    <script src="Js/menu.js"></script>
+    <script src="Js/faq.js"></script>
+    <script src="Js/selectorIdiomas.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

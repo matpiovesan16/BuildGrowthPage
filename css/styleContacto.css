@@ -1,0 +1,144 @@
+:root{
+    --mariner-50: #f2f9ff;
+    --mariner-100: #f9f9fe;
+    --mariner-200: #c1e5fc;
+    --mariner-300: #97d6f9;
+    --mariner-400: #66bef4;
+    --mariner-500: #42a2ef;
+    --mariner-600: #2c86e4;
+    --mariner-700: #2573d9;
+    --mariner-800: #235aaa;
+    --mariner-900: #224d86;
+    --mariner-950: #193052;
+    --fontDos:'Open Sans', sans-serif;
+}
+
+#contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactoContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: 600px;
+    border: 1px solid var(--mariner-700);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formTitulo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px
+
+}
+
+.formTitulo>h1{
+    font-size: 3em;
+    text-align: left;
+}
+
+.formularioContenedor{
+    width: 50%;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.botonFormulario{
+    background-color: var(--mariner-700) !important;
+    color: var(--mariner-50);
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--mariner-950);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.formGroup{
+    position: relative;
+    color: var(--mariner-900);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.formInput{
+    width: 90%;
+    font-size: 1.5em;
+    color: var(--mariner-950);
+    padding: .6em, .3em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--mariner-700);
+    background: transparent;
+}
+
+
+.formLabel{
+    color: var(--mariner-900);
+    cursor: pointer;
+    position: absolute;
+    top: -6px;
+    left: 25px;
+    transform: translateY(10px);
+    transition: trasnform .5, color .8s;
+    font-size: 1.5em;
+    opacity: .5;
+    z-index: -1;
+}
+
+.formInput:focus + .formLabel, .formInput:not(:placeholder-shown) + .formLabel{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    opacity: 1;
+    color: var(--mariner-900);
+}
+
+
+@media screen and (max-width:720px) {
+    .formTitulo{
+        width: 90%;
+        height: 80px;
+    
+    }
+    
+    .formTitulo>h1{
+        font-size: 2em;
+    }
+
+    .formularioContenedor{
+        width: 90%;
+        
+    }
+    
+    .formulario{
+        height: 300px;
+        width: 100%;
+    }
+    
+
+    
+}
