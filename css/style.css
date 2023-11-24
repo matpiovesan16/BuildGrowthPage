@@ -158,6 +158,74 @@ header{
     cursor: pointer;
 }
 
+footer{
+    background-color: var(--mariner-50);
+    
+}
+
+
+
+.containerFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 200px; */
+}
+
+.containerLogo, .containerDatos, .containerRedes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+}
+
+.containerLogo>img{
+    width: 40%;
+}
+
+.containerDatos{
+    gap: 5px;
+}
+.containerDatos>h1{
+    font-size: 1.3em;
+    font-family: var(--fontDos);
+    color: var(--mariner-950);
+}
+
+.containerRedes{
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.containerRedes>i{
+    cursor: pointer;
+    font-size: 2.5em;
+    color: var(--mariner-950);
+}
+
+.containerRedes>i:hover{
+    opacity: 0.5;
+}
+
+
+.containerCopy{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.containerCopy>h1{
+    color: var(--mariner-950);
+    font-family: var(--fontDos);
+
+}
+
+
+
 @media screen and (max-width:1230px){
 
     nav{
@@ -228,6 +296,19 @@ header{
         top: 87%;
         left: 83%;
     
+    }
+    .containerFooter{
+        gap: 20px;
+    }
+
+    .containerLogo, .containerDatos, .containerRedes{
+        width: 90%;
+        padding: 10px;
+    
+    }
+
+    .containerLogo>img{
+        width: 40%;
     }
 
    
