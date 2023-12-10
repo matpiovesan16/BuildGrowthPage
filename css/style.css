@@ -8,7 +8,7 @@ html {
 
 
 :root{
-    --mariner-50: #f2f9ff;
+    --mariner-50: #fbffffd7;
     --mariner-100: #f9f9fe;
     --mariner-200: #c1e5fc;
     --mariner-300: #97d6f9;
@@ -93,7 +93,7 @@ nav>a>img{
     scale: 1.05;
 }
 header{
-    background-color: var(--mariner-50);
+    background-color: var(--mariner-100);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +136,10 @@ header{
     filter: invert(30%) sepia(93%) saturate(1214%) hue-rotate(195deg) brightness(102%) contrast(87%);
 }
 
+.servicio{
+    background-color: var(--mariner-50);
+}
+
 .whatsapp{
     position: fixed;
     width: 50px;
@@ -159,7 +163,7 @@ header{
 }
 
 footer{
-    background-color: var(--mariner-50);
+    background-color: rgba(228, 232, 237, 0.683);
     height: 200px;
     display: flex;
     flex-direction: column;

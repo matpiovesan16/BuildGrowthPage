@@ -1,5 +1,5 @@
 :root{
-    --mariner-50: #f2f9ff;
+    --mariner-50: #fbffffd7;
     --mariner-100: #f9f9fe;
     --mariner-200: #c1e5fc;
     --mariner-300: #97d6f9;
@@ -10,6 +10,22 @@
     --mariner-800: #235aaa;
     --mariner-900: #224d86;
     --mariner-950: #193052;
+
+    --orange-50: #fff5ed;
+    --orange-100: #ffe7d5;
+    --orange-200: #feccaa;
+    --orange-300: #fda874;
+    --orange-400: #fa6d2c;
+    --orange-500: #f85517;
+    --orange-600: #e93a0d;
+    --orange-700: #c1290d;
+    --orange-800: #9a2212;
+    --orange-900: #7c1f12;
+    --orange-950: #430c07;
+
+
+
+
     --fontDos:'Open Sans', sans-serif;
 }
 
@@ -20,6 +36,7 @@
     gap: 40px;
     align-items: center;
     padding: 20px;
+    background-color: var(--mariner-50);
 }
 
 .contactoContenedor{
