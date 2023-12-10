@@ -160,18 +160,24 @@ header{
 
 footer{
     background-color: var(--mariner-50);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
 
 
 .containerFooter{
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 200px; */
+    height: 200px;
 }
 
 .containerLogo, .containerDatos, .containerRedes{
@@ -217,6 +223,7 @@ footer{
     font-weight: bold;
     text-align: center;
     padding: 5px;
+    justify-self: end;
 }
 .containerCopy>h1{
     color: var(--mariner-950);
@@ -298,17 +305,18 @@ footer{
     
     }
     .containerFooter{
-        gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
 
     .containerLogo, .containerDatos, .containerRedes{
         width: 90%;
-        padding: 10px;
+        padding: 5px;
     
     }
 
     .containerLogo>img{
-        width: 40%;
+        width: 35%;
     }
 
    
